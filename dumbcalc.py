@@ -1,13 +1,23 @@
 #!/root/python/hh1h/bin/python
 
+from colorama import Fore, Back, Style
+
 """
-Дебильный калькулятор v1
+Дебильный калькулятор v2
 """
+
+print(Fore.GREEN)
 
 what = input("Что делаем? (+, -): ")
 
-a = int(input("Введи первое число: "))
-b = int(input("Введи второе число: "))
+print(Fore.CYAN)
+
+
+a = float(input("Введи первое число: "))
+b = float(input("Введи второе число: "))
+
+print(Fore.YELLOW)
+
 
 if what == "+":
 	ab = str(a + b)
@@ -18,6 +28,8 @@ elif what == "-":
 else:
 	print("Неверная операция!")
 
+
+print(Fore.YELLOW, Back.BLACK)
 
 print("Hello, world")
 
